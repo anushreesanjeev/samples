@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Project Management</title>
+        <link rel = "stylesheet" type="text/css" href="/css/style.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="/js/script.js"></script>
+    </head>
+    <body>
+        <body onload="getUser();">
+        <p>Hello <span class="email"></span>!</p>
+        <p><a href="/logout">Logout</a> </p>
+
+        <p><a href="/project">Add Project</a> </p>
+        <h2> Project List</h2>
+
+        <table border="1px" width="100%" id="projecttable">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Start date</th>
+                <th>End date</th>
+                <th>Action</th>
+           </tr>
+        </table>
+
+    </body>
+</html>

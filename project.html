@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Project Management</title>
+         <link rel = "stylesheet" type="text/css" href="/css/style.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="/js/script.js"></script>
+    </head>
+    <body>
+        <body onload="getUser()">
+        <p>Hello <span class="email"></span>! </p>
+        <p><a href="/logout">Logout</a> </p>
+
+        <h2>Project Details</h2>
+
+        <form>
+            <p>
+            <label for="name">Project Name:</label>
+            <input type="text" class="name" placeholder="Enter your project name" required/>
+            </p> 
+            <p>           
+            <label for="description">Description:</label>
+            <textarea class="description" placeholder="Enter a short description" required></textarea>
+             </p>           
+            <p>
+            <label for="startdate">Start Date:</label>
+            <input type="date" class="startdate" placeholder="Enter your start date" required/>
+            </p>
+            <p>
+            <label for="enddate">End Date:</label>
+            <input type="date" class="enddate" placeholder="Enter your end date" required/>
+            </p>
+            <input type="submit" value="Add Project" onclick="addProject()" style="margin-left:100px"/>
+            <br /><br /> 
+        </form>
+
+        <p style="text-align:center"><a href="/home" style="text-align:center">Click here to go back</a> </p>
+    </body>
+</html>
